@@ -43,7 +43,7 @@ public class Example : MonoBehaviour
 
     private void Display<T>(string title, DebugResourceChecker<T> checker) where T : UnityEngine.Object
     {
-        GUILayout.Label(title, style);
+        GUILayout.Label(title);
         GUILayout.Label(string.Format(" Count     : {0} ", checker.Count));
         GUILayout.Label(string.Format(" TotalSize : {0:F2}MB ", checker.TotalSizeMB));
         GUILayout.Label(string.Format(" PeakSize  : {0:F2}MB ", checker.PeakSizeMB));
